@@ -40,3 +40,4 @@ log/mdl_sql.log
 .cache/
 logs/
 
+/.idea/
