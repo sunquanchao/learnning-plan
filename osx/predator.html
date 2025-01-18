@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
-    <title>predator</title>
-    <!-- predator's layout map
-     -->
-    <style type="text/css">
-        ul,li{list-style: none;margin:0;padding:0;float:left;}
-        html{height:100%}
-        body{height:100%;margin:0px;padding:0px;font-family:"微软雅黑";}
-        #container{height:100%;width:100%;}
-        #r-result{width:100%;}
-    </style>
+        <title>predator</title>
+        <!-- predator's layout map
+         -->
+        <style type="text/css">
+            ul,li{list-style: none;margin:0;padding:0;float:left;}
+            html{height:100%}
+            body{height:100%;margin:0px;padding:0px;font-family:"微软雅黑";}
+            #container{height:100%;width:100%;}
+            #r-result{width:100%;}
+        </style>
 
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=2a1b59e687d0d3188b62ed8c155207b7"></script>
-    <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
-    <script type="text/javascript">
-                window.jQuery|| document.write("<script src='../static_resources/assets/js/jquery.js'>"+ "<"+"/script>");
-            </script>
+        <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=2a1b59e687d0d3188b62ed8c155207b7"></script>
+        <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+        <script type="text/javascript">
+            window.jQuery|| document.write("<script src='../static_resources/assets/js/jquery.js'>"+ "<"+"/script>");
+        </script>
 
 
-</head>
-<body bgcolor="#669966">
+    </head>
+    <body bgcolor="#669966">
 
     <!-- <a style='float:right； text-align: right;'  target="_blank" href="https://www.amap.com" title="Zheng Zhou">zhengzhou</a> |合立图书销售有限公司-->
 
     <a align="center"  target="_blank" href="file:///Users/sunquanchao/workspace/predator.html" title="郑州超响科技(集团)[100人｜0-100岁|2087年]">CXcorp</a>
-    <a target="_blank" href="https://www.zhipin.com/beijing/">boss</a>
-    <!-- 100-10000人 100岁 0-100行 -->
+    <!-- 100-1000-10000人 1-100千行百业  100岁 -->
     <a target="_blank" href="https://www.baidu.com/s?wd=%E4%B8%87%E5%B9%B4%E5%8E%86" title="calendar">Calendar</a>
     <a align="center"  target="_blank" href="https://map.baidu.com/@12649521.59,4105848.27,12z" title="ZhengZhou">ZZ</a>
-    <a align="center"  target="_blank" href="https://map.baidu.com/poi/%E6%97%A7%E9%87%91%E5%B1%B1/@-13627815.280000001,4521261.13,12z" title="SanFrancisco">SF</a>
+
+    <a align="center"  target="_blank" href="https://cn.bing.com/maps?cp=q8rfpt4szz15&lvl=12.5"    title="SanFrancisco-SiliconValley">SF</a>
+    <!-- <a align="center"  target="_blank" href="https://map.baidu.com/poi/SF%20Francisco/@-13623931.834831484,4519020.638935819,13.08z"    title="SanFrancisco-SiliconValley">SF</a> -->
+    <a target="_blank" href="https://www.zhipin.com/beijing/">boss</a>
 
     <!-- <a align="center"  target="_blank" href="https://map.baidu.com/@12959238.56,4825347.47,12z" title="ZhengZhou">ZZ</a> -->
     <a target="_blank" href="https://github.com/sunquanchao/leetcode">Eng&Algo(paper)&Engin&Data</a>
@@ -50,7 +52,7 @@
     <span data="272351724@qq.com sqc123456"></span>
     <a target="_blank" href="http://www.chinadaily.com.cn">cd</a>
     <a target="_blank" href="https://www.globaltimes.cn">gt</a>
-     <a target="_blank" href="https://www.google.com">g</a>
+    <a target="_blank" href="https://www.google.com">g</a>
 
 
     <div></div>
@@ -61,91 +63,91 @@
     </div>  -->
 
 
-<script type="text/javascript">
-    var map = new BMap.Map("container",{mapType: BMAP_HYBRID_MAP});
-    //var map = new BMap.Map("container");          // 创建地图实例
-    //var point = new BMap.Point(114.895594041,31.3844393228);
-    var point = new BMap.Point(112.895594041,31.3844393228);//设置中心点坐标
-    map.centerAndZoom(point, 6);             // 初始化地图，设置中心点坐标和地图级别
-    // map.enableScrollWheelZoom(); // 允许滚轮缩放
-    map.disableDragging();
+    <script type="text/javascript">
+        var map = new BMap.Map("container",{mapType: BMAP_HYBRID_MAP});
+        //var map = new BMap.Map("container");          // 创建地图实例
+        //var point = new BMap.Point(114.895594041,31.3844393228);
+        var point = new BMap.Point(112.895594041,31.3844393228);//设置中心点坐标
+        map.centerAndZoom(point, 6);             // 初始化地图，设置中心点坐标和地图级别
+        // map.enableScrollWheelZoom(); // 允许滚轮缩放
+        map.disableDragging();
 
-    map.addControl(new BMap.MapTypeControl());
+        map.addControl(new BMap.MapTypeControl());
 
-    var points =[
-        // {"lng":"113.682753","lat":"34.727059","count":"1"},
-        //{"lng":"113.682753","lat":"34.727059","count":"97"}
-        // {"lng":"113.682753","lat":"34.727059","count":"60"}
-        {"lng":"113.682753","lat":"34.727059","count":"50"}
-        ,
-        {"lng":"114.512753","lat":"30.502753","count":"40"}
-        // ,
-        // {"lng":"114.012753","lat":"31.052753","count":"40"}
-        // ,
-        // {"lng":"114.012753","lat":"25.052753","count":"40"}
-        // ,
-        // {"lng":"114.012753","lat":"25.052753","count":"50"}
+        var points =[
+            // {"lng":"113.682753","lat":"34.727059","count":"1"},
+            //{"lng":"113.682753","lat":"34.727059","count":"97"}
+            // {"lng":"113.682753","lat":"34.727059","count":"60"}
+            {"lng":"113.682753","lat":"34.727059","count":"50"}
+            ,
+            {"lng":"114.512753","lat":"30.502753","count":"40"}
+            // ,
+            // {"lng":"114.012753","lat":"31.052753","count":"40"}
+            // ,
+            // {"lng":"114.012753","lat":"25.052753","count":"40"}
+            // ,
+            // {"lng":"114.012753","lat":"25.052753","count":"50"}
 
-    ];
-//#这里面添加房价的经纬度，我的太多了，所以只拿了三个
+        ];
+        //#这里面添加房价的经纬度，我的太多了，所以只拿了三个
 
 
-    if(!isSupportCanvas()){
-        alert('热力图目前只支持有canvas支持的浏览器,您所使用的浏览器不能使用热力图功能~')
-    }
-    //详细的参数,可以查看heatmap.js的文档 https://github.com/pa7/heatmap.js/blob/master/README.md
-    //参数说明如下:
-    /* visible 热力图是否显示,默认为true
-     * opacity 热力的透明度,1-100
-     * radius 势力图的每个点的半径大小
-     * gradient  {JSON} 热力图的渐变区间 . gradient如下所示
-     *  {
-            .2:'rgb(0, 255, 255)',
-            .5:'rgb(0, 110, 255)',
-            .8:'rgb(100, 0, 255)'
+        if(!isSupportCanvas()){
+            alert('热力图目前只支持有canvas支持的浏览器,您所使用的浏览器不能使用热力图功能~')
         }
-        其中 key 表示插值的位置, 0~1.
-            value 为颜色值.
-     */
-     //升维思维，降维打击
-    heatmapOverlay = new BMapLib.HeatmapOverlay({"radius":100*2});
-    // heatmapOverlay = new BMapLib.HeatmapOverlay({"radius":100});
-    // heatmapOverlay = new BMapLib.HeatmapOverlay({"radius":100*0.5});
-    map.addOverlay(heatmapOverlay);
-    heatmapOverlay.setDataSet({data:points,max:100});
-    // heatmapOverlay.setDataSet({data:points,max:10});
+        //详细的参数,可以查看heatmap.js的文档 https://github.com/pa7/heatmap.js/blob/master/README.md
+        //参数说明如下:
+        /* visible 热力图是否显示,默认为true
+         * opacity 热力的透明度,1-100
+         * radius 势力图的每个点的半径大小
+         * gradient  {JSON} 热力图的渐变区间 . gradient如下所示
+         *  {
+                .2:'rgb(0, 255, 255)',
+                .5:'rgb(0, 110, 255)',
+                .8:'rgb(100, 0, 255)'
+            }
+            其中 key 表示插值的位置, 0~1.
+                value 为颜色值.
+         */
+        //升维思维，降维打击
+        heatmapOverlay = new BMapLib.HeatmapOverlay({"radius":100*2});
+        // heatmapOverlay = new BMapLib.HeatmapOverlay({"radius":100});
+        // heatmapOverlay = new BMapLib.HeatmapOverlay({"radius":100*0.5});
+        map.addOverlay(heatmapOverlay);
+        heatmapOverlay.setDataSet({data:points,max:100});
+        // heatmapOverlay.setDataSet({data:points,max:10});
 
-    //closeHeatmap();
+        //closeHeatmap();
 
-    //判断浏览区是否支持canvas
-    function isSupportCanvas(){
-        var elem = document.createElement('canvas');
-        return !!(elem.getContext && elem.getContext('2d'));
-    }
+        //判断浏览区是否支持canvas
+        function isSupportCanvas(){
+            var elem = document.createElement('canvas');
+            return !!(elem.getContext && elem.getContext('2d'));
+        }
 
-    function setGradient(){
-        /*格式如下所示:
-        {
-            0:'rgb(102, 255, 0)',
-            .5:'rgb(255, 170, 0)',
-            1:'rgb(255, 0, 0)'
-        }*/
-        var gradient = {};
-        var colors = document.querySelectorAll("input[type='color']");
-        colors = [].slice.call(colors,0);
-        colors.forEach(function(ele){
-            gradient[ele.getAttribute("data-key")] = ele.value;
-        });
-        heatmapOverlay.setOptions({"gradient":gradient});
-    }
+        function setGradient(){
+            /*格式如下所示:
+            {
+                0:'rgb(102, 255, 0)',
+                .5:'rgb(255, 170, 0)',
+                1:'rgb(255, 0, 0)'
+            }*/
+            var gradient = {};
+            var colors = document.querySelectorAll("input[type='color']");
+            colors = [].slice.call(colors,0);
+            colors.forEach(function(ele){
+                gradient[ele.getAttribute("data-key")] = ele.value;
+            });
+            heatmapOverlay.setOptions({"gradient":gradient});
+        }
 
-    function openHeatmap(){
-        heatmapOverlay.show();
-    }
+        function openHeatmap(){
+            heatmapOverlay.show();
+        }
 
-    function closeHeatmap(){
-        heatmapOverlay.hide();
-    }
-</script>
-</body>
-</html>
+        function closeHeatmap(){
+            heatmapOverlay.hide();
+        }
+    </script>
+    </body>
+    </html>
